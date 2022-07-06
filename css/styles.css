@@ -1,51 +1,3 @@
-/* Template: Aria - Business HTML Landing Page Template
-   Author: Inovatik
-   Created: Jul 2019
-   Description: Master CSS file
-*/
-
-/*****************************************
-Table Of Contents:
-
-01. General Styles
-02. Preloader
-03. Navigation
-04. Header
-05. Intro
-06. Description
-07. Services
-08. Details 1
-09. Details 2
-10. Testimonials
-11. Call Me
-12. Projects
-13. Project Lightboxes
-14. Team
-15. About
-16. Contact
-17. Footer2290
-18. Copyright
-19. Back To Top Button
-20. Extra Pages
-21. Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-
-- Backgrounds - light gray #fbfbfb
-- Background - dark blue #153e52
-- Backgrounds navbar, footer - dark gray #113448
-- Buttons, bullets, icons - green #14bf98
-- Headings text - black #484a46
-- Body text - gray #787976
-- Body text - light gray #dfe5ec
-******************************************/
-
-
-/******************************/
-/*     01. General Styles     */
-/******************************/
 body,
 html {
 	width: 100%;
@@ -135,7 +87,7 @@ a.white,
 
 
 .testimonial-author {
-	font: 700 1rem/1.375rem "Montserrat", sans-serif;
+	font: 700 1.3rem/1.375rem "Montserrat", sans-serif;
 }
 
 strong {
@@ -867,7 +819,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .header h1 {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 	color: #fff;
 }
 
@@ -1922,7 +1874,7 @@ a:hover.back-to-top {
 
 .product {
 	width: 100%;
-	background-image: url(../images/banner_company.jpg);
+	background-image: url(../images/banner_shuzi.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -2680,12 +2632,12 @@ a:hover.back-to-top {
 
 /* 新加 */
 /* 首页 */
-#home .swiper-slide {
+/* #home .swiper-slide {
 	height: 530px;
 	border: 1px solid #ebe8e8;
 	padding: 20px 0;
 	border-radius: 0.625rem;
-}
+} */
 
 #home .swiper-slide .testimonial-text {
 	text-align: left;
@@ -2711,6 +2663,31 @@ a:hover.back-to-top {
 /* #home .swiper-slide:hover{
 	transform: translateZ(30px) scale(0.9);
 } */
+
+
+
+#cost {
+	height: 300px;
+	line-height: 50%;
+	background-image: url(../images/technology.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	padding-top: 20px;
+}
+#cost h2{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
 #switch {
 	padding-bottom: 50px;
 }
@@ -2770,7 +2747,10 @@ a:hover.back-to-top {
 #google-map h2,
 #jianJie h2,
 #hexin h2,
-#lowCode h2 {
+#lowCode h2,
+#serverCompany h2,
+#industry h2,
+#pinJie h2 {
 	padding: 50px 0;
 	text-align: center;
 }
@@ -3036,15 +3016,137 @@ a:hover.back-to-top {
 
 
 /* 低代码pass */
-#lowCode  .container {
-	 width: 100%;
-	 display: flex;
-	 justify-content: space-around;
-	 text-align: center;
+#lowCode .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
 }
-#lowCode  .container .card {
+
+#lowCode .container .card {
+	width: 15%;
 	border: none;
 }
-#lowCode  .container .card img{
+
+#lowCode .container .card .cardImg {
+	width: 50%;
+	margin: 0 auto 20px;
+	padding-top: 15px;
+	background-color: #00d5ff;
+	border-radius: 10px;
+}
+
+#lowCode .container .card .cardImg:hover {
+	transform: scale(1.3);
+	transition: all 0.6s;
+}
+
+
+#lowCode .container .card img {
 	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#serverCompany {
+	margin-bottom: 30px;
+}
+
+#serverCompany .serverCompany {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#serverCompany .serverTop {
+	margin-top: 30px;
+}
+
+#serverCompany .serverCompany .server {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #00d5ff;
+	margin-bottom: 20px;
+}
+
+#serverCompany .serverCompany .server:hover {
+	transform: rotateZ(360deg);
+	transition: all 0.6s;
+}
+
+#serverCompany .serverCompany .server img {
+	width: 50%;
+	margin: o auto;
+}
+
+
+
+#industry .center {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#industry .industryList {
+	padding: 30px 50px;
+	border: 1px solid #ebe8e8;
+	border-radius: 10px;
+	box-shadow: 2px 1px #ebe8e8;
+}
+
+#industry .center h5 {
+	color: #14bf98;
+}
+
+#industry ul li {
+	text-align: left;
+	line-height: 30px;
+	position: relative;
+}
+
+#industry ul li b {
+	position: absolute;
+	top: 10px;
+	left: -35px;
+	width: 5px;
+	height: 12px;
+	background: #14bf98;
+	display: inline-block;
+}
+
+#pinJie {
+	margin-bottom: 100px;
+}
+
+#pinJie .pinJieImg {
+	width: 100%;
+	height: 500px;
+	background-image: url('../images/lowCode/pingjie.png');
+	background-size: cover;
+}
+
+
+.animate__backInLeft {
+	--animate-duration: 4s;
+}
+
+.animate__backInDown {
+	--animate-duration: 4s;
+}
+
+.animate__backInRight {
+	--animate-duration: 4s;
+}
+
+.animate__backInUp {
+	--animate-duration: 4s;
+}
+
+.animate__fadeInDownBig {
+	--animate-duration: 5s;
 }

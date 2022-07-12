@@ -2675,13 +2675,141 @@ a:hover.back-to-top {
 	background-position: top;
 	padding-top: 20px;
 }
-#cost h2{
+
+#cost h2 {
 	color: #FFFFFF;
 }
 
 
+#LINXPaaS .LINXPaaCard {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
 
 
+#LINXPaaS .LINXPaaCardCenter {
+	flex: 4;
+}
+
+#LINXPaaS .LINXPaaCardCenter .LINXPaaCardCenterUp,
+#LINXPaaS .LINXPaaCardCenter .LINXPaaCardCenterDown {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+
+#LINXPaaS .LINXPaaCardLeft,
+#LINXPaaS .LINXPaaCardRight {
+	flex: 1;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+
+
+#LINXPaaS .LINXPaaCardLeft::after {
+	position: absolute;
+	content: "";
+	top: 0px;
+	right: 0px;
+	width: 80px;
+	height: 76px;
+	background-image: url(../images/icon/arrowRu.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+#LINXPaaS .LINXPaaCardLeft::before {
+	position: absolute;
+	content: "";
+	top: 60px;
+	right: 0px;
+	width: 80px;
+	height: 76px;
+	background-image: url(../images/icon/arrowRd.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#LINXPaaS .LINXPaaCardRight::after {
+	position: absolute;
+	content: "";
+	top: 0px;
+	right: 110px;
+	width: 80px;
+	height: 76px;
+	background-image: url(../images/icon/arrowRd.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#LINXPaaS .LINXPaaCardRight::before {
+	position: absolute;
+	content: "";
+	top: 70px;
+	right: 110px;
+	width: 80px;
+	height: 76px;
+	background-image: url(../images/icon/arrowRu.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+#LINXPaaS .LINXPaaCardLeft .CardLeft {
+	float: left;
+}
+
+#LINXPaaS .LINXPaaCardRight .CardRight {
+	float: right;
+
+}
+
+#LINXPaaS .textCard {
+	border: 0.5px solid #CCCCCC;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px #CCCCCC;
+}
+
+#LINXPaaS img:hover {
+	transform: scale(1.2) rotateZ(360deg);
+	transition: all 0.6s;
+}
+
+#LINXPaaS img {
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	background-color: #00d5ff;
+	border-radius: 50%;
+}
+
+#LINXPaaS .jiantou {
+	border-radius: initial;
+	background-color: initial;
+	padding: 0;
+}
+
+
+
+#LINXPaaS p {
+	margin-top: 15px;
+	margin-bottom: 0.3125rem;
+	color: #666;
+	font-size: 16px;
+	font-weight: bold;
+}
 
 
 
@@ -2750,8 +2878,10 @@ a:hover.back-to-top {
 #lowCode h2,
 #serverCompany h2,
 #industry h2,
-#pinJie h2 {
-	padding: 50px 0;
+#pinJie h2,
+#Office h2,
+.container h2 {
+	padding: 80px 0;
 	text-align: center;
 }
 
@@ -3048,6 +3178,177 @@ a:hover.back-to-top {
 	margin-bottom: 20px;
 }
 
+#Office .officeBox {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+	;
+}
+
+#Office .officeBox .officeLeft {
+	line-height: 2.2;
+	font-size: 18px;
+	flex: 1;
+}
+
+#Office .officeBox .officeLeft b {
+	width: 5px;
+	height: 13px;
+	display: inline-block;
+	background-color: #14bf98;
+	margin-right: 22px;
+}
+
+#Office .officeRight {
+	flex: 2;
+	width: 400px;
+	height: 400px;
+	background-image: url(../images/office.png);
+}
+
+#Office .officeRight2 {
+	width: 400px;
+	height: 400px;
+	background-image: url(../images/office2.png);
+}
+
+#Office .officeRight:hover,
+#Office .officeRight2:hover,
+#log .officeBox .officeLeft:hover,
+#log .officeBox .officeRight:hover,
+#log .officeBoxLog .officeLogL:hover,
+#log .officeBoxLog .officeLogR:hover,
+#log .officeBoxLog .officeLogLi:hover,
+#log .officeBoxLog .officeLogRi:hover,
+#business .officeBox div:hover{
+	transform: scale(1.1);
+	transition: all 0.6s;
+}
+
+#log .officeBox {
+	display: flex;
+	justify-content: space-between;
+}
+
+#log .officeBox .officeLeft,
+#log .officeBox .officeRight {
+	flex: 1;
+	background-repeat: no-repeat;
+	background-size: 90% 100%;
+}
+
+#log .officeBoxLog .officeLeft h3,
+#log .officeBoxLog .officeRight h3 {
+	width: 10rem;
+	height: 5.25rem;
+	background: #00d5ff;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#log .officeBoxLog .officeLeft h3 span,
+#log .officeBoxLog .officeRight h3 span {
+	margin-left: 10px;
+	vertical-align: sub;
+	color: #fff;
+}
+
+#log .officeBox .officeLeft {
+	width: 400px;
+	height: 400px;
+	background-image: url(../images/office3.png);
+}
+
+#log .officeBox .officeRight {
+	height: 400px;
+	background-image: url(../images/office4.png);
+}
+
+#log .officeBoxLog .officeLeft img.imgTrue,
+#log .officeBoxLog .officeRight img.imgTrue {
+	width: 12.5rem;
+}
+
+
+
+
+
+
+
+#log .officeBoxLog {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#log .officeBoxLog .officeLogL,
+#log .officeBoxLog .officeLogR {
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: 90% 100%;
+	margin: 40px 0;
+}
+
+#log .officeBoxLog .officeLogLi,
+#log .officeBoxLog .officeLogRi {
+	width: 500px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+#log .officeBoxLog .officeLogL {
+	background-image: url(../images/office5.png);
+}
+
+#log .officeBoxLog .officeLogR {
+	background-image: url(../images/office6.png);
+}
+
+#log .officeBoxLog .officeLogLi {
+	background-image: url(../images/office7.png);
+	margin: 40px 0;
+}
+
+#log .officeBoxLog .officeLogRi {
+	background-image: url(../images/office10.png);
+	margin: 40px 0;
+}
+
+#business .officeBox{
+	display: flex;
+	justify-content: space-between;
+}
+#business .officeBox div{
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 100px;
+}
+#business .officeBox .officeLeft{
+	background-image: url(../images/office11.png);
+}
+#business .officeBox .officeCenter{
+	background-image: url(../images/office12.png);
+}
+
+#business .officeBox .officeRight{
+	background-image: url(../images/office13.png);
+}
+
+
+
+
+
+
 #serverCompany {
 	margin-bottom: 30px;
 }
@@ -3119,15 +3420,12 @@ a:hover.back-to-top {
 	display: inline-block;
 }
 
-#pinJie {
-	margin-bottom: 100px;
-}
 
 #pinJie .pinJieImg {
 	width: 100%;
 	height: 500px;
 	background-image: url('../images/lowCode/pingjie.png');
-	background-size: cover;
+	background-size: 100%;
 }
 
 
@@ -3148,5 +3446,9 @@ a:hover.back-to-top {
 }
 
 .animate__fadeInDownBig {
+	--animate-duration: 5s;
+}
+
+.animate__fadeInUpBig {
 	--animate-duration: 5s;
 }

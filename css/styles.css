@@ -1028,6 +1028,17 @@ screen and (-ms-high-contrast: none) {
 	background-size: 100%;
 }
 
+.tabs .apsNew:hover,
+.tabs .guowang:hover,
+.tabs .apsNew :hover,
+.accordion .zhongyuan:hover,
+.accordion .shinaide:hover,
+.accordion .xuji:hover,
+.tabs .lingwa:hover {
+	transform: scale(1.2);
+	transition: all 0.6s linear;
+}
+
 
 .accordion .accordion-container {
 	max-width: 90%;
@@ -1229,6 +1240,12 @@ screen and (-ms-high-contrast: none) {
 	background: url('../images/lingwaMES.png') center center no-repeat;
 	background-size: 100%;
 }
+
+.tabs .apsNew {
+	background: url('../images/apsNew.png') center center no-repeat;
+	background-size: 100%;
+}
+
 
 
 /****************************/
@@ -1899,6 +1916,13 @@ a:hover.back-to-top {
 .gongye {
 	width: 100%;
 	background-image: url(../images/banner_gongye.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.lowInfo{
+	width: 100%;
+	background-image: url(../images/banner_low.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -2880,7 +2904,8 @@ a:hover.back-to-top {
 #industry h2,
 #pinJie h2,
 #Office h2,
-.container h2 {
+#log h2,
+#business h2 {
 	padding: 80px 0;
 	text-align: center;
 }
@@ -3125,11 +3150,10 @@ a:hover.back-to-top {
 
 #LinxMom .LinxImage {
 	width: 100%;
-	height: 700px;
-	margin: 50px 0;
+	height: 600px;
 	background-image: url(../images/mom.png);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto;
 	background-position: center;
 }
 
@@ -3222,7 +3246,7 @@ a:hover.back-to-top {
 #log .officeBoxLog .officeLogR:hover,
 #log .officeBoxLog .officeLogLi:hover,
 #log .officeBoxLog .officeLogRi:hover,
-#business .officeBox div:hover{
+#business .officeBox div:hover {
 	transform: scale(1.1);
 	transition: all 0.6s;
 }
@@ -3321,11 +3345,12 @@ a:hover.back-to-top {
 	margin: 40px 0;
 }
 
-#business .officeBox{
+#business .officeBox {
 	display: flex;
 	justify-content: space-between;
 }
-#business .officeBox div{
+
+#business .officeBox div {
 	width: 100%;
 	height: 400px;
 	background-repeat: no-repeat;
@@ -3333,14 +3358,16 @@ a:hover.back-to-top {
 	background-size: cover;
 	margin-bottom: 100px;
 }
-#business .officeBox .officeLeft{
+
+#business .officeBox .officeLeft {
 	background-image: url(../images/office11.png);
 }
-#business .officeBox .officeCenter{
+
+#business .officeBox .officeCenter {
 	background-image: url(../images/office12.png);
 }
 
-#business .officeBox .officeRight{
+#business .officeBox .officeRight {
 	background-image: url(../images/office13.png);
 }
 

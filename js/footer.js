@@ -7,7 +7,7 @@ document.writeln("						<p class=\'white\'><img src=\'images/icon/phone.png\'> :
 document.writeln("						<p class=\'white\'><img src=\'images/icon/iphone.png\' class=\'small\'> : +86-18721633726 、+86-18017032987</p>");
 document.writeln("						<p class=\'white\'><img src=\'images/icon/email.png\' class=\'small\'> : qun_wang@linxvalley.com </p>");
 document.writeln("						<p class=\'white\'><img src=\'images/icon/email.png\' class=\'small\'> : yanqian_liao@linxvalley.com </p>");
-document.writeln("						<p class=\'white\'><img src=\'images/icon/adress.png\' class=\'small\'> : 上海市浦东新区新区秀浦路3500号B幢</p>");
+document.writeln("						<p class=\'white\'><img src=\'images/icon/adress.png\' class=\'small\'> : 上海市浦东新区灵岩南路295号12号楼12-103室</p>");
 document.writeln("					</div>");
 document.writeln("			");
 document.writeln("				</div>");

@@ -2606,9 +2606,9 @@ a:hover.back-to-top {
 
 
 	/* Footer */
-	.footer .text-container.about {
+	/* .footer .text-container.about {
 		margin-right: 5rem;
-	}
+	} */
 
 	/* end of footer */
 
@@ -2820,7 +2820,7 @@ a:hover.back-to-top {
 	width: 70px;
 	height: 70px;
 	padding: 10px;
-	background-color: #00d5ff;
+	background-color: #14bf98;
 	border-radius: 50%;
 }
 
@@ -2911,7 +2911,7 @@ a:hover.back-to-top {
 #Office h2,
 #log h2,
 #business h2 {
-	padding: 80px 0;
+	padding: 60px 0;
 	text-align: center;
 }
 
@@ -3191,7 +3191,7 @@ a:hover.back-to-top {
 	width: 50%;
 	margin: 0 auto 20px;
 	padding-top: 15px;
-	background-color: #00d5ff;
+	background-color: #14bf98;
 	border-radius: 10px;
 }
 
@@ -3272,7 +3272,7 @@ a:hover.back-to-top {
 #log .officeBoxLog .officeRight h3 {
 	width: 10rem;
 	height: 5.25rem;
-	background: #00d5ff;
+	background: #14bf98;
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
@@ -3403,7 +3403,7 @@ a:hover.back-to-top {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background-color: #00d5ff;
+	background-color: #14bf98;
 	margin-bottom: 20px;
 }
 

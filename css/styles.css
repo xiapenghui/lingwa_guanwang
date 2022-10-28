@@ -788,7 +788,8 @@ screen and (-ms-high-contrast: none) {
 /*********************/
 
 .home {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-back.jpg') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+	url('../images/header-back.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -963,7 +964,7 @@ screen and (-ms-high-contrast: none) {
 	border-bottom-left-radius: 0.375rem;
 	border-bottom-right-radius: 0.375rem;
 	background-color: #fff;
-	height: 340px;
+	height: 265px;
 }
 
 .cards-2 h3 {

@@ -277,11 +277,11 @@
 
 		</div>
 
-
+ 
 
 		<div id="friend">
 			<div class="container">
-				<h2>我们荣誉</h2>
+				<h2>我们的荣誉</h2>
 				<div class="row">
 					<div class="col-md-6" ,width="80%" ,height="95">
 						<img src="../images/rongyu1.png">
@@ -353,7 +353,8 @@
 						<!-- <p class='white'><img src='images/icon/email.png' class='small'> : qun_wang@linxvalley.com </p> -->
 						<p class='white'><img src='../images/icon/email.png' class='small'> : linx@linxvalley.com
 						</p>
-						<p class='white'><img src='../images/icon/adress.png' class='small'> : 上海市浦东新区灵岩南路295号12号楼12-103室
+						<p class='white'><img src='../images/icon/adress.png' class='small'> :
+							上海市浦东新区灵岩南路295号12号楼12-103室
 						</p>
 					</div>
 
@@ -363,8 +364,9 @@
 					<div class='text-container'>
 						<h4>我们的使命</h4>
 						<p class='white'>赋能个性化制造</p>
-						<p class='white'>持续研发最落地的制造管理信息系统</p>
-						<p class='white'>通过数字化服务提升制造企业效率</p>
+						<p class='white'>化繁为简 为数字化转型赋能</p>
+						<p class='white'>持续研发"简&智"开发工具和制造管理信息系统</p>
+						<p class='white'>通过服务为制造型企业数字化赋能，提升制造企业效率</p>
 					</div>
 				</div>
 				<div class='col-md-4'>
@@ -410,11 +412,11 @@
 		point: "121.503318,31.162774",
 		address: "上海市浦东新区灵岩南路295号12号楼12-103室"
 	}];
-	
+
 	var map; //Map实例  
 	function map_init() {
 		map = new BMap.Map("map");
-	
+
 		//第1步：设置地图中心点，上海市  
 		var point = new BMap.Point(121.503318, 31.162774);
 		var circle = new BMap.Circle(point, 20, {
@@ -450,25 +452,25 @@
 			isOpen: 1
 		});
 		map.addControl(ctrlOve);
-	
+
 		//第6步：向地图中添加比例尺控件  
 		var ctrlSca = new window.BMap.ScaleControl({
 			anchor: BMAP_ANCHOR_BOTTOM_LEFT
 		});
 		map.addControl(ctrlSca);
-	
+
 		//第7步：绘制点    
 		for (var i = 0; i < markerArr.length; i++) {
 			var p0 = markerArr[i].point.split(",")[0];
 			var p1 = markerArr[i].point.split(",")[1];
 			var maker = addMarker(new window.BMap.Point(p0, p1), i);
 			addInfoWindow(maker, markerArr[i], i);
-	
+
 		}
 	}
-	
-	
-	
+
+
+
 	// 添加标注  
 	function addMarker(point, index) {
 		var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png",
@@ -483,7 +485,7 @@
 		marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
 		return marker;
 	}
-	
+
 	// 添加信息窗口  
 	function addInfoWindow(marker, poi) {
 		//pop弹窗标题  
@@ -503,7 +505,7 @@
 			title: title,
 			width: 200
 		});
-	
+
 		var openInfoWinFun = function() {
 			marker.openInfoWindow(infoWindow);
 		};

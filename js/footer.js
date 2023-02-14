@@ -15,7 +15,7 @@ document.writeln("			");
 document.writeln("				<div class=\'col-md-3\'>");
 document.writeln("					<div class=\'text-container\'>");
 document.writeln("						<h4>我们的使命</h4>");
-document.writeln("						<p class=\'white\'>持续研发最落地的制造管理信息系统</p>");
+document.writeln("						<p class=\'white\'>持续研发落地的制造管理信息系统</p>");
 document.writeln("						<p class=\'white\'>通过数字化服务提升制造企业效率</p>");
 document.writeln("						<p class=\'white\'>提升质量水平，降低浪费和库存</p>");
 document.writeln("						<p class=\'white\'>我们依靠企业生存，企业依靠我们发展</p>");

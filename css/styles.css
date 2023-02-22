@@ -576,13 +576,13 @@ screen and (-ms-high-contrast: none) {
 /*     02. Preloader     */
 /*************************/
 .spinner-wrapper {
-	position: fixed;
+/* 	position: fixed;
 	z-index: 999999;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	background: #113448;
+	left: 0; */
+	/* background: #113448; */
 }
 
 .spinner {
